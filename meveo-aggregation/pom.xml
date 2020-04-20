@@ -47,6 +47,54 @@
 							</resources>
 						</configuration>
 					</execution>
+					<execution>
+						<id>copy-functional-documentation</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.build.outputDirectory}/functional-documentation/</outputDirectory>
+							<resources>
+								<resource>
+									<directory>../functional-documentation/target/generated-docs</directory>
+									<include>**/**</include>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+					<execution>
+						<id>copy-technical-documentation</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.build.outputDirectory}/technical-documentation/</outputDirectory>
+							<resources>
+								<resource>
+									<directory>../technical-documentation/target/generated-docs</directory>
+									<include>**/**</include>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
+					<execution>
+						<id>copy-installation-and-development</id>
+						<phase>process-resources</phase>
+						<goals>
+							<goal>copy-resources</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.build.outputDirectory}/installation-and-development/</outputDirectory>
+							<resources>
+								<resource>
+									<directory>../installation-and-development/target/generated-docs</directory>
+									<include>**/**</include>
+								</resource>
+							</resources>
+						</configuration>
+					</execution>
 
 					<execution>
 						<id>copy-index</id>

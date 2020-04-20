@@ -5,8 +5,8 @@
 
 include::topics/templates/document-attributes-product.adoc[]
 
-:productoverview_guide:
+:technicaldocumentation_guide:
 
-= {productoverview_name}
+= {technicaldocumentation_name}
 
 include::topics.adoc[]

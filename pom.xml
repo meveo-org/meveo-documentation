@@ -40,6 +40,9 @@
 		<module>meveo-header-maven-plugin</module>
 		<module>meveo-aggregation</module>
 		<module>product-overview</module>
+		<module>functional-documentation</module>
+		<module>technical-documentation</module>
+		<module>installation-and-development</module>
 	</modules>
 
 	<build>
